@@ -1,0 +1,283 @@
+:root {
+  --forest: #0b2b1e;
+  --gold: #b88a2a;
+  --text: #ffffff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 82px;
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__overlay--right {
+  background: linear-gradient(
+    to right,
+    rgba(11, 43, 30, 0.93),
+    rgba(11, 43, 30, 0.75),
+    rgba(11, 43, 30, 0.25)
+  );
+}
+
+.hero__overlay--top {
+  background: linear-gradient(
+    to top,
+    rgba(11, 43, 30, 0.75),
+    transparent 45%
+  );
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.hero__container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 80px 24px;
+}
+
+.hero__text {
+  max-width: 620px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.hero__logo {
+  width: 220px;
+  height: auto;
+
+  margin-bottom: 12px;
+
+  filter: drop-shadow(0 18px 35px rgba(0, 0, 0, .30));
+
+  transition: transform .35s ease;
+}
+
+.hero__logo:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   NOME
+========================= */
+
+.hero__name {
+  margin: 0;
+
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: -1px;
+
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .hero__name {
+    font-size: 78px;
+  }
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.hero__subtitle {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+
+  color: var(--gold);
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.hero__divider {
+  width: 150px;
+  height: 2px;
+
+  margin: 28px 0 34px;
+
+  background: linear-gradient(
+    to right,
+    var(--gold),
+    transparent
+  );
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.hero__description {
+  max-width: 580px;
+
+  font-size: 19px;
+  line-height: 1.8;
+
+  opacity: .92;
+
+  font-weight: 300;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero__actions {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+
+  margin-top: 42px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px 30px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: .3s ease;
+}
+
+.btn--gold {
+  background: linear-gradient(
+    135deg,
+    #f6e27a,
+    #d4af37
+  );
+
+  color: var(--forest);
+
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.btn--gold:hover {
+  transform: translateY(-3px);
+}
+
+.btn--outline {
+  color: white;
+  border: 1px solid rgba(255,255,255,.45);
+  background: rgba(255,255,255,.03);
+}
+
+.btn--outline:hover {
+  background: rgba(255,255,255,.10);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.hero__footer {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 2;
+
+  text-align: center;
+
+  font-size: 12px;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+
+  opacity: .65;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding-top: 70px;
+  }
+
+  .hero__container {
+    padding: 60px 24px;
+  }
+
+
+
+  .hero__logo {
+    width: 150px;
+  }
+
+  .hero__name {
+    font-size: 48px;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__description {
+    font-size: 17px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

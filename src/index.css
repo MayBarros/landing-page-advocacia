@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RESET MODERNO */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ROOT LIMPO (SEM TRAVAR LAYOUT) */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TIPOGRAFIA GLOBAL */
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* MELHOR H1 PADRÃO */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,136 @@
+:root {
+  --forest: #0b2b1e;
+  --gold: #b88a2a;
+  --muted: #6b7280;
+  --border: rgba(0,0,0,0.12);
+}
+
+/* SECTION */
+.contact {
+  padding: 120px 0;
+  background: #fff;
+}
+
+/* CONTAINER */
+.contact__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+/* HEADER */
+.contact__tag {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.contact__title {
+  margin-top: 16px;
+  font-size: 42px;
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.contact__highlight {
+  font-family: serif;
+  font-style: italic;
+  color: var(--gold);
+}
+
+.contact__divider {
+  width: 120px;
+  height: 2px;
+  margin: 24px auto;
+  background: linear-gradient(to right, var(--gold), transparent);
+}
+
+.contact__text {
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* GRID */
+.contact__grid {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .contact__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CARD */
+.contactCard {
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--forest);
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.label {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.value {
+  font-weight: 600;
+  color: var(--forest);
+}
+
+/* BUTTON */
+.contact__button {
+  margin-top: 48px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  background: var(--forest);
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.contact__button:hover {
+  background: #123524;
+  transform: translateY(-2px);
+}
+
+.btnIcon {
+  width: 16px;
+  height: 16px;
+}
