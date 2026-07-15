@@ -5,6 +5,21 @@
 }
 
 /* =========================
+   RESET COMPATIBILIDADE
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
    HERO
 ========================= */
 
@@ -57,7 +72,6 @@
   );
 }
 
-
 /* =========================
    CONTAINER
 ========================= */
@@ -106,8 +120,11 @@
   font-size: 64px;
   font-weight: 300;
   letter-spacing: -1px;
+  line-height: 1.1;
 
   color: white;
+
+  word-break: break-word;
 }
 
 @media (min-width: 768px) {
@@ -174,6 +191,7 @@
   flex-wrap: wrap;
 
   margin-top: 42px;
+  width: 100%;
 }
 
 .btn {
@@ -191,6 +209,11 @@
   font-weight: 500;
 
   transition: .3s ease;
+
+  box-sizing: border-box;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .btn--gold {
@@ -249,13 +272,12 @@
 
   .hero {
     padding-top: 70px;
+    min-height: auto;
   }
 
   .hero__container {
-    padding: 60px 24px;
+    padding: 48px 18px;
   }
-
-
 
   .hero__logo {
     width: 150px;
@@ -263,6 +285,7 @@
 
   .hero__name {
     font-size: 48px;
+    line-height: 1.1;
   }
 
   .hero__subtitle {
@@ -271,13 +294,56 @@
 
   .hero__description {
     font-size: 17px;
+    line-height: 1.7;
   }
 
   .hero__actions {
+    width: 100%;
     flex-direction: column;
+    gap: 14px;
   }
 
   .btn {
     width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
   }
+
+  .hero__footer {
+    position: static;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+}
+
+/* Smartphones pequenos */
+
+@media (max-width: 480px) {
+
+  .hero__container {
+    padding: 40px 16px;
+  }
+
+  .hero__logo {
+    width: 130px;
+  }
+
+  .hero__name {
+    font-size: 40px;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 14px 18px;
+  }
+
 }

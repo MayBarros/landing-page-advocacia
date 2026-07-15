@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Hero.css";
 
 import pontePhoto from "../assets/ponte.jpg";
-import logo from "../assets/YB-Logo.png";
+import logo from "../assets/YB-Logo.jpg";
 
 
 export default function Hero() {

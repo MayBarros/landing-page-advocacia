@@ -20,7 +20,7 @@ export default function Footer() {
           />
 
           <h2 className="footer__name">Yamê Barros</h2>
-          <p className="footer__sub">Advogada · OAB/ES 00.000</p>
+          <p className="footer__sub">Advogada · OAB/ES 30216</p>
 
           <div className="footer__social">
             <a href="https://www.instagram.com/yamebarros.adv?igsh=OGt0c3A2NWZjaXE4" target="_blank" rel="noopener noreferrer">
