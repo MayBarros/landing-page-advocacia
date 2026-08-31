@@ -59,9 +59,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero__footer">
-        Vitória · Espírito Santo
-      </div>
+      
     </section>
   );
 }
